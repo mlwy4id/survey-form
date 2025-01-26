@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="overlay">
+    <h1 id="title">Survey Kepuasan Pelanggan Restoran Aku Suka</h1>
+    <p id="description">Bantu kami meningkatkan pengalaman makan Anda!</p>
+
+    <form id="survey-form">
+      <fieldset id="fieldset-first">
+        <label id="name-label" for="name"
+          >Masukkan Nama Lengkap Anda:
+          <input type="text" id="name" required placeholder="Azmii Said"
+        /></label>
+
+        <label id="email-label" for="email"
+          >Masukkan Email Anda:
+          <input type="email" id="email" required placeholder="abcde@gmail.com"
+        /></label>
+
+        <label id="number-label" for="number"
+          >Umur (opsional):
+          <input type="number" id="number" min="0" max="100" placeholder="17"
+        /></label>
+
+        <label>
+          Pilih jenis kelamin Anda:
+          <select id="dropdown">
+            <option>Pilih salah satu</option>
+            <option>Laki-laki</option>
+            <option>Perempuan</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label>
+          <p>Seberapa puas Anda dengan pengalaman makan di restoran kami?</p>
+          <input name="User-Rate" type="radio" value="5" /> Sangat Puas
+          <br>
+          <input name="User-Rate" type="radio" value="4" /> Puas
+          <br>
+          <input name="User-Rate" type="radio" value="3" /> Netral
+          <br>
+          <input name="User-Rate" type="radio" value="2" /> Tidak Puas
+          <br>
+          <input name="User-Rate" type="radio" value="1" /> Sangat Tidak Puas
+        </label>
+
+        <label>
+          <p>Fasilitas apa yang Anda gunakan selama di restoran kami?</p>
+          <input type="checkbox" value="rmi"> Ruang Makan Indoor
+          <br>
+          <input type="checkbox" value="rmo"> Ruang Makan Outdoor
+          <br>
+          <input type="checkbox" value="wf"> WiFi
+          <br>
+          <input type="checkbox" value="tp"> Tempat Parkir
+          <br>
+          <input type="checkbox" value="mshl"> Mushola
+        </label>
+
+        <label>
+          Tulis komentar atau saran untuk kami:
+          <textarea></textarea>
+        </label>
+      </fieldset>
+
+      <input type="submit" id="submit">
+    </form>
+  </body>
+</html>

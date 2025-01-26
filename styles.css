@@ -1,0 +1,83 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-image: url(https://images.pexels.com/photos/1449773/pexels-photo-1449773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    position: relative;
+    text-shadow: 3px 3px 5px black;
+}
+
+.overlay{
+    border-image: linear-gradient(rgba(0, 0, 0, 0.750), rgba(0, 0, 0, 0.750)) fill;
+}
+
+h1, p#description{
+    text-align: center;
+    text-shadow: 10px;
+}
+
+p#description{
+    font-style: italic;
+}
+
+form{
+    margin: auto 20rem;
+    background-color: #3c2424f0;
+    padding: 5px;
+}
+
+fieldset{
+    border: none;
+}
+
+label{
+    display: block;
+    margin: auto 1rem;
+    margin-bottom: 2rem;
+}
+
+#name-label{
+    margin-top: 2rem;
+}
+
+
+input{
+    min-width: 250px;
+    display: block;
+    margin: 0.75em 0 0.75em 0;
+    padding: 0.25em 0 0.25em 0;
+    border-radius: 10px;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    display: inline;
+    margin-top: 0.25rem;
+    margin-left: -6rem;
+    margin-right: -6rem;
+}
+
+input[type="text"], input[type="email"], input[type="number"]{
+    width: 95%;
+    min-height: 15px;
+    padding: 10px;
+}
+
+select{
+    width: 100%;
+    min-height: 20px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+textarea{
+    width: 100%;
+    min-height: 200px;
+    margin-top: 1rem;
+}
+
+input[type="submit"]{
+    width: 100px;
+    min-height: 25px;
+    margin: -1.5rem auto 2rem auto;
+    background-color: green;
+    color: white;
+}
